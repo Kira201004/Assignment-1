@@ -1,0 +1,131 @@
+/* Apply styling to the whole webpage */
+body{
+ font-family:'Segoe UI'; /* Set main font style */
+ margin:0; /* Remove default spacing around page */
+ background:linear-gradient(135deg,#1f1f1f,#2d2d2d); /* Dark gradient background */
+ color:white; /* Text color */
+}
+
+/* Header styling */
+header{
+ background:#111; /* Dark background */
+ padding:20px; /* Space inside header */
+ box-shadow:0 4px 10px rgba(0,0,0,0.5); /* Shadow effect for modern look */
+}
+
+/* Navigation links styling */
+nav a{
+ color:#00ffd5; /* Bright highlight color */
+ margin-right:20px; /* Space between links */
+ text-decoration:none; /* Remove underline */
+ font-weight:bold; /* Bold text */
+}
+
+/* Profile section styling */
+.profile-section{
+ padding:40px;
+ text-align:center; /* Center content */
+}
+
+/* Tagline text styling */
+.tagline{
+ color:#00ffd5;
+ font-weight:bold;
+}
+
+/* Container for grade and temperature converter pages */
+.converter-container{
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ margin-top:60px;
+}
+
+/* Box styling for input area */
+.converter-box{
+ display:flex;
+ gap:15px; /* Space between elements */
+ background:#1e1e1e;
+ padding:20px;
+ border-radius:12px; /* Rounded corners */
+}
+
+/* Styling for input fields and dropdown menus */
+.converter-box input,
+.converter-box select{
+ padding:12px;
+ font-size:16px;
+ border-radius:8px;
+ border:none;
+}
+
+/* Button styling */
+.converter-box button{
+ padding:12px 25px;
+ font-size:18px;
+ border-radius:10px;
+ border:none;
+ background:#00ffd5;
+ font-weight:bold;
+ cursor:pointer; /* Pointer when hovering */
+}
+
+/* Temperature output result styling */
+#output{
+ margin-top:25px;
+ font-size:22px;
+ color:#00ffd5;
+ font-weight:bold;
+}
+
+/* Table styling for staff page */
+table{
+ width:100%;
+ border-collapse:collapse;
+ margin-top:20px;
+}
+
+/* Table header and cell styling */
+th,td{
+ border:1px solid #555;
+ padding:10px;
+}
+
+/* Footer styling */
+footer{
+ text-align:center;
+ padding:20px;
+ margin-top:40px;
+ border-top:1px solid #444;
+}
+
+/* About Me section styling */
+.about-me{
+  max-width:800px;
+  margin:auto;
+  margin-top:40px;
+  background:#1e1e1e;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 0 20px rgba(0,255,213,0.2);
+  text-align:left;
+}
+
+/* About Me title styling */
+.about-me h2{
+  color:#00ffd5;
+  margin-bottom:15px;
+}
+
+/* About Me paragraph spacing */
+.about-me p{
+  line-height:1.6;
+  margin-bottom:15px;
+}
+
+/* Profile image styling */
+#profilePic{
+  margin-top:20px;
+  border-radius:12px;
+  box-shadow:0 0 20px rgba(0,255,213,0.6);
+}
