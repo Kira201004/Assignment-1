@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Temperature Converter</h1>
+
+  <nav>
+    <a href="index.html">Profile</a>
+    <a href="grade.html">Grade</a>
+    <a href="staff.html">Staff</a>
+    <a href="temp.html">Temperature</a>
+  </nav>
+</header>
+
+<!-- Main container for temperature converter -->
+<section class="converter-container">
+
+<div class="converter-box">
+
+  <!-- Input box where user enters temperature value -->
+  <input type="number" id="tempValue" placeholder="Enter temperature">
+
+  <!-- Dropdown menu to select temperature type -->
+  <select id="type">
+    <option value="C">Celsius</option>
+    <option value="F">Fahrenheit</option>
+    <option value="K">Kelvin</option>
+  </select>
+
+  <!-- Button to run convertTemp() JavaScript function -->
+  <button onclick="convertTemp()">Convert</button>
+</div>
+
+<!-- Area where converted temperature result will appear -->
+<p id="output"></p>
+
+</section>
+
+<!-- Connect external JavaScript file that contains temperature conversion logic -->
+<script src="Javascript/temp.js"></script>
+
+</body>
+</html>
+
+<footer>
+  <p>© 2026 Nyein Chan Tun</p>
+  <p id="date"></p>
+</footer>
+
+<script>
+document.getElementById("date").innerHTML = new Date().toDateString();
+</script>

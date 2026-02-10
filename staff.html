@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Staff</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Staff List</h1>
+
+  <nav>
+    <a href="index.html">Profile</a>
+    <a href="grade.html">Grade</a>
+    <a href="staff.html">Staff</a>
+    <a href="temp.html">Temperature</a>
+  </nav>
+</header>
+
+<section>
+
+<!-- Button to sort staff alphabetically by name -->
+<button onclick="sortName()">Sort by Name</button>
+
+<!-- Button to sort staff by salary -->
+<button onclick="sortSalary()">Sort by Salary</button>
+
+<!-- Table to display staff data -->
+<table>
+
+<thead>
+<tr>
+  <!-- Table column headings -->
+  <th>Name</th>
+  <th>Position</th>
+  <th>Office</th>
+  <th>ID</th>
+  <th>Start Date</th>
+  <th>Salary</th>
+</tr>
+</thead>
+
+<!-- Table body where JavaScript will insert staff rows dynamically -->
+<tbody id="staffTable"></tbody>
+
+</table>
+
+</section>
+
+<!-- Connect external JavaScript file that contains staff dataset and sorting functions -->
+<script src="Javascript/staff.js"></script>
+
+</body>
+</html>
+
+<footer>
+  <p>© 2026 Nyein Chan Tun</p>
+
+  <p id="date"></p>
+</footer>
+
+
+<script>
+document.getElementById("date").innerHTML = new Date().toDateString();
+</script>
