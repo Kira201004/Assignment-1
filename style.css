@@ -1,0 +1,115 @@
+body{
+ font-family:'Segoe UI';
+ margin:0;
+ background:linear-gradient(135deg,#1f1f1f,#2d2d2d);
+ color:white;
+}
+
+header{
+ background:#111;
+ padding:20px;
+ box-shadow:0 4px 10px rgba(0,0,0,0.5);
+}
+
+nav a{
+ color:#00ffd5;
+ margin-right:20px;
+ text-decoration:none;
+ font-weight:bold;
+}
+
+.profile-section{
+ padding:40px;
+ text-align:center;
+}
+
+.tagline{
+ color:#00ffd5;
+ font-weight:bold;
+}
+
+.converter-container{
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ margin-top:60px;
+}
+
+.converter-box{
+ display:flex;
+ gap:15px;
+ background:#1e1e1e;
+ padding:20px;
+ border-radius:12px;
+}
+
+.converter-box input,
+.converter-box select{
+ padding:12px;
+ font-size:16px;
+ border-radius:8px;
+ border:none;
+}
+
+.converter-box button{
+ padding:12px 25px;
+ font-size:18px;
+ border-radius:10px;
+ border:none;
+ background:#00ffd5;
+ font-weight:bold;
+ cursor:pointer;
+}
+
+#output{
+ margin-top:25px;
+ font-size:22px;
+ color:#00ffd5;
+ font-weight:bold;
+}
+
+table{
+ width:100%;
+ border-collapse:collapse;
+ margin-top:20px;
+}
+
+th,td{
+ border:1px solid #555;
+ padding:10px;
+}
+
+footer{
+ text-align:center;
+ padding:20px;
+ margin-top:40px;
+ border-top:1px solid #444;
+}
+
+.about-me{
+  max-width:800px;
+  margin:auto;
+  margin-top:40px;
+  background:#1e1e1e;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 0 20px rgba(0,255,213,0.2);
+  text-align:left;
+}
+
+.about-me h2{
+  color:#00ffd5;
+  margin-bottom:15px;
+}
+
+.about-me p{
+  line-height:1.6;
+  margin-bottom:15px;
+}
+
+#profilePic{
+  margin-top:20px;
+  border-radius:12px;
+  box-shadow:0 0 20px rgba(0,255,213,0.6);
+}
+
