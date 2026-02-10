@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Profile</title>
+
+  <!-- Link to external CSS file for styling the website layout, colors, and spacing -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header section containing the website title and navigation menu -->
+<header>
+  <h1>My Profile</h1>
+
+  <!-- Navigation bar to move between different pages of the website -->
+  <nav>
+    <a href="index.html">Profile</a>
+    <a href="grade.html">Grade Converter</a>
+    <a href="staff.html">Staff</a>
+    <a href="temp.html">Temperature</a>
+  </nav>
+</header>
+
+<!-- Profile image that will appear after 10 seconds using JavaScript -->
+<!-- display:none hides the image first -->
+<img id="profilePic" src="profile.jpg" width="300" style="display:none;">
+
+<!-- Main section for About Me content -->
+<section class="profile-section">
+  <div class="about-me">
+
+    <h2>About Me</h2>
+
+    <!-- Personal introduction -->
+    <p>Hello! My name is Nyein Chan Tun. I am currently studying Software Development at Bow Valley College.</p>
+
+    <!-- Skills and interests -->
+    <p>I am passionate about learning programming and building web applications using HTML, CSS, and JavaScript.</p>
+
+    <!-- Career goal -->
+    <p>My goal is to become a professional software developer and create useful applications that help people in daily life.</p>
+
+    <!-- Learning mindset -->
+    <p>I enjoy solving problems, learning new technologies, and improving my coding skills every day.</p>
+
+  </div>
+</section>
+
+<!-- Footer section -->
+<footer>
+  <!-- Copyright text -->
+  <p>© 2026 Nyein Chan Tun</p>
+
+  <!-- Current date will be inserted here using JavaScript -->
+  <p id="date"></p>
+</footer>
+
+<script>
+/* 
+   setTimeout is used to delay an action.
+   After 10 seconds, the profile image will appear.
+   This shows dynamic control using JavaScript.
+*/
+setTimeout(function(){
+  var img = document.getElementById("profilePic");
+  if(img){
+    img.style.display = "block"; // make image visible
+  }
+}, 10000);
+
+/*
+   Display the current date automatically in the footer.
+   The Date object gets today's date and updates the webpage.
+*/
+document.getElementById("date").innerHTML = new Date().toDateString();
+</script>
+
+</body>
+</html>
